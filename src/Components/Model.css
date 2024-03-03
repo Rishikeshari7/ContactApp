@@ -1,0 +1,11 @@
+.form-cont{
+    animation: form 1s;
+}
+@keyframes form {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
