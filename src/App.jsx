@@ -67,7 +67,11 @@ function App() {
     </div>
     <div className='w-[370px] gap-2 '>
       {
-        filteredContact.length===0?( <div className=' h-[200px] flex items-center justify-center'><p className='text-white font-bold text-3xl'>No User Found..</p></div>)
+        filteredContact.length===0?
+        ( <div className=' h-[400px] flex items-center justify-center gap-2'>
+            <img src='/images/Hands Contact.png'></img>
+        <p className='text-white font-bold text-3xl mb-5'>No User Found..</p>
+        </div>)
         :
         (
           filteredContact?.map((con)=>(<Contact key={con.id} con={con} isUpdate={isUpdate} isOpen={isOpen} setIsOpen={setIsOpen} setUpdate={setUpdate} toRemove={toRemove} setRemove={setRemove}/>))
